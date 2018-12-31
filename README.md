@@ -1,4 +1,8 @@
+![](https://doc-08-ag-docs.googleusercontent.com/docs/securesc/edmkg1tuj4kcv1gfqgs9sjntl0pcffgq/q8n8v2mqoeqmie20j336ir61jbuoss0t/1546257600000/13967449329645854207/05284167755395757851/1g1so0UTaQfjsmmheulcPdc2D2OJScRqN)
+
+<div align="center">
 # YDPCard
+</div>
 
 [![Version](https://img.shields.io/cocoapods/v/YDPCard.svg?style=flat)](https://cocoapods.org/pods/YDPCard)
 [![Platform](https://img.shields.io/badge/Platform-iOS-blue.svg?style=fla)](https://cocoapods.org/pods/FormTableViewSwift)
@@ -9,24 +13,22 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
 ## Installation
 
-YDPCard is available through [CocoaPods](https://cocoapods.org). To install
+-YDPCard is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'YDPCard'
 ```
-also add this to end:
+-Also add this to end:
 ```ruby
 post_install do |installer|
-    installer.pods_project.targets.each do |target|
-        target.build_configurations.each do |config|
-            config.build_settings['CONFIGURATION_BUILD_DIR'] = '$PODS_CONFIGURATION_BUILD_DIR'
-        end
-    end
+installer.pods_project.targets.each do |target|
+target.build_configurations.each do |config|
+config.build_settings['CONFIGURATION_BUILD_DIR'] = '$PODS_CONFIGURATION_BUILD_DIR'
+end
+end
 end
 
 ```
