@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/Yudonpay/YDPCard/blob/master/card.jpeg">
+<img src="https://github.com/Yudonpay/YDPCard/blob/master/Resources/card.jpeg">
 </p>
 <div align="center">
 <h1> YDPCard</h1>
