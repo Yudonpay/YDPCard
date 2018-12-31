@@ -1,0 +1,16 @@
+PODS:
+  - YDPCard (0.1.0)
+
+DEPENDENCIES:
+  - YDPCard (from `/Users/josemiguelherrero/YDPCard`)
+
+EXTERNAL SOURCES:
+  YDPCard:
+    :path: "/Users/josemiguelherrero/YDPCard"
+
+SPEC CHECKSUMS:
+  YDPCard: 5294d66b00926b003d5a1f56b9c7e9370434c4cf
+
+PODFILE CHECKSUM: 0b9e0bc83f7aa94b79eaabff61f3b818d19937d3
+
+COCOAPODS: 1.5.2

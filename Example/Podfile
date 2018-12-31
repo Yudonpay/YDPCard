@@ -1,0 +1,20 @@
+use_frameworks!
+
+target 'YDPCard_Example' do
+     pod 'YDPCard', :path => '/Users/josemiguelherrero/YDPCard'
+#    pod 'YDPCard', :git => 'https://github.com/Yudonpay/YDPCard.git'
+
+  target 'YDPCard_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['CONFIGURATION_BUILD_DIR'] = '$PODS_CONFIGURATION_BUILD_DIR'
+        end
+    end
+end

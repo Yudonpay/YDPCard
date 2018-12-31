@@ -1,0 +1,29 @@
+{
+  "name": "YDPCard",
+  "version": "0.1.0",
+  "summary": "A short description of YDPCard.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://yudonpay.com",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "José Miguel Herrero": "jmiguel.herrero@yudonpay.com"
+  },
+  "source": {
+    "git": "https://github.com/Yudonpay/YDPCard.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/yudonpay",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "YDPCard/Classes/**/*.{swift,xib}",
+  "resources": "YDPCard/Assets/*.{png}",
+  "resource_bundles": {
+    "YDPCard": [
+      "YDPCard/Assets/*.{png}"
+    ]
+  }
+}
