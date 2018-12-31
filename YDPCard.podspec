@@ -22,7 +22,7 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://yudonpay.com'
-#  s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots      = 'https://github.com/Yudonpay/YDPCard/blob/master/Resources/Front.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'José Miguel Herrero' => 'jmiguel.herrero@yudonpay.com' }
   s.source           = { :git => 'https://github.com/Yudonpay/YDPCard.git', :tag => s.version.to_s }
