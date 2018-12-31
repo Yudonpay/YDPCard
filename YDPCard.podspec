@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'YDPCard'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of YDPCard.'
+  s.summary          = 'YDPCard simple '
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -29,7 +29,7 @@ TODO: Add long description of the pod here.
   s.social_media_url = 'https://twitter.com/yudonpay'
 
   s.ios.deployment_target = '9.0'
-
+  s.swift_version = '4.2'
   s.source_files = 'YDPCard/Classes/**/*.{swift,xib}'
   s.resources = 'YDPCard/Assets/*.{png}'
   s.resource_bundles = {
