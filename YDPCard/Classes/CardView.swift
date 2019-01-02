@@ -118,9 +118,27 @@ public class CardView: UIView {
         backCard.shadowColor = shadowColor
     }
     
+    private func clean() {
+        self.labelTitleNumber.text = ""
+        self.labelSaveSecure.text = ""
+        self.fieldNumber.text = ""
+    }
+    
+    private func configureLabel(_ cardViewModel: CardViewModel) {
+        self.labelTitleNumber.text = cardViewModel.title
+        self.labelSaveSecure.text = cardViewModel.subtitle
+    }
+    
     private func configureField(_ cardViewModel: CardViewModel) {
         self.fieldNumber.text = cardViewModel.number
         self.fieldNumber.isUserInteractionEnabled = cardViewModel.number.isEmpty
+    }
+    
+    private func configureImageView(_ cardViewModel: CardViewModel) {
+        self.codeImage.image = cardViewModel.image
+        let tap = UITapGestureRecognizer(target: self, action: #selector(CardView.openBigCode))
+        self.codeImage.isUserInteractionEnabled = true
+        self.codeImage.addGestureRecognizer(tap)
     }
     
     //MARK: Actions
@@ -143,11 +161,24 @@ public class CardView: UIView {
         isBackShowing = !isBackShowing
     }
     
+    @objc func openBigCode() {
+        let window = UIApplication.shared.keyWindow!
+        let bundle = Bundle(for: BigCodeView.self)
+        let nib = UINib(nibName: "BigCodeView", bundle: bundle)
+        if let view = nib.instantiate(withOwner: self, options: nil)[0] as?  BigCodeView {
+            if let image = self.codeImage.image {
+                view.imageCode.image = image.rotate(radians: .pi/2)
+                view.frame = window.frame
+                window.addSubview(view)
+            }
+        }
+    }
+    
     //MARK: - Public func
-public func configure(_ cardViewModel: CardViewModel) {
-        self.labelTitleNumber.text = cardViewModel.title
+    public func configure(_ cardViewModel: CardViewModel) {
+        clean()
+        configureLabel(cardViewModel)
         configureField(cardViewModel)
-        self.labelSaveSecure.text = cardViewModel.subtitle
-        self.codeImage.image = cardViewModel.image
+        configureImageView(cardViewModel)
     }
 }

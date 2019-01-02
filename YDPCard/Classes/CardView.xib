@@ -78,7 +78,7 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="padlock.png" translatesAutoresizingMaskIntoConstraints="NO" id="RcO-lC-SXe">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="padlock" translatesAutoresizingMaskIntoConstraints="NO" id="RcO-lC-SXe">
                             <rect key="frame" x="10" y="169.5" width="15" height="8"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="15" id="2Pg-Re-GQx"/>
@@ -121,6 +121,6 @@
         </view>
     </objects>
     <resources>
-        <image name="padlock.png" width="618" height="792"/>
+        <image name="padlock" width="618" height="792"/>
     </resources>
 </document>

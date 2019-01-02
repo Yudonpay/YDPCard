@@ -7,7 +7,6 @@ target 'YDPCard_Example' do
   target 'YDPCard_Tests' do
     inherit! :search_paths
 
-    
   end
 end
 

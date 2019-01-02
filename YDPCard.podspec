@@ -31,9 +31,9 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
   s.swift_version = '4.2'
   s.source_files = 'YDPCard/Classes/**/*.{swift,xib}'
-  s.resources = 'YDPCard/Assets/*.{png}'
+  s.resources = 'YDPCard/Assets/Assets.xcassets'
   s.resource_bundles = {
-     'YDPCard' => ['YDPCard/Assets/*.{png}']
+     'YDPCard' => ['YDPCard/Assets/Assets.xcassets']
    }
 
 end

@@ -1,9 +1,10 @@
 {
   "name": "YDPCard",
   "version": "0.1.0",
-  "summary": "A short description of YDPCard.",
+  "summary": "YDPCard simple",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://yudonpay.com",
+  "screenshots": "https://github.com/Yudonpay/YDPCard/blob/master/Resources/Front.png",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -19,11 +20,12 @@
   "platforms": {
     "ios": "9.0"
   },
+  "swift_version": "4.2",
   "source_files": "YDPCard/Classes/**/*.{swift,xib}",
-  "resources": "YDPCard/Assets/*.{png}",
+  "resources": "YDPCard/Assets/Assets.xcassets",
   "resource_bundles": {
     "YDPCard": [
-      "YDPCard/Assets/*.{png}"
+      "YDPCard/Assets/Assets.xcassets"
     ]
   }
 }
