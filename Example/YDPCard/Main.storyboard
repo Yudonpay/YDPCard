@@ -71,7 +71,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3hO-Do-uJg" customClass="CardView" customModule="YDPCard">
-                                <rect key="frame" x="31" y="32" width="312" height="192"/>
+                                <rect key="frame" x="31.5" y="32" width="312" height="192"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="3hO-Do-uJg" secondAttribute="height" multiplier="13:8" id="Adb-8L-RiZ"/>
